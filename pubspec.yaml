@@ -1,0 +1,68 @@
+name: posture_chair_companion
+description: "Posture Control Chair Companion — monitor and record posture sensor data from ESP32 via BLE."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Navigation
+  go_router: ^14.6.2
+
+  # Database
+  drift: ^2.22.1
+  sqlite3_flutter_libs: ^0.5.24
+  path_provider: ^2.1.5
+  path: ^1.9.0
+
+  # Bluetooth
+  flutter_blue_plus: ^1.35.3
+
+  # Charts
+  fl_chart: ^0.69.0
+
+  # Preferences (theme persistence)
+  shared_preferences: ^2.3.3
+
+  # CSV export
+  csv: ^6.0.0
+  share_plus: ^10.1.4
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Code generation
+  build_runner: ^2.4.13
+  drift_dev: ^2.22.1
+  riverpod_generator: ^2.6.1
+
+  # App icon generation
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#5E81F4"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+  web:
+    generate: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
